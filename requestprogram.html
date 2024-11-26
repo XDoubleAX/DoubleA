@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request a Program - Double_A_Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="paidservices.html">Paid Services</a></li>
+                <li><a href="freeprograms.html">Free Programs</a></li>
+                <li><a href="requestprogram.html">Request a Program</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Request a Custom Program</h1>
+        <form action="https://formspree.io/f/xyz" method="POST">
+            <label for="platform">Platform:</label><br>
+            <select id="platform" name="platform">
+                <option value="Desktop">Desktop</option>
+                <option value="Android">Android</option>
+            </select><br><br>
+
+            <label for="budget">Budget:</label><br>
+            <select id="budget" name="budget">
+                <option value="Free">Free</option>
+                <option value="5-20">5 to 20 $</option>
+                <option value="20-50">20 to 50 $</option>
+                <option value="50-100">50 to 100 $</option>
+                <option value="100-250">100 to 250 $</option>
+            </select><br><br>
+
+            <label for="deadline">Deadline:</label><br>
+            <select id="deadline" name="deadline">
+                <option value="3-5">3 to 5 days</option>
+                <option value="1week">1 Week</option>
+                <option value="2weeks">2 Weeks</option>
+            </select><br><br>
+
+            <label for="details">App Details:</label><br>
+            <textarea id="details" name="details" rows="4" cols="50"></textarea><br><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Double_A_Store</p>
+    </footer>
+</body>
+</html>
